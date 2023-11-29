@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/MuhIsmailMks/try-react-router.git/static/css/main.cc15635a.css",
-    "main.js": "/MuhIsmailMks/try-react-router.git/static/js/main.5c640e69.js",
-    "static/js/787.d90a9344.chunk.js": "/MuhIsmailMks/try-react-router.git/static/js/787.d90a9344.chunk.js",
-    "static/media/logo.svg": "/MuhIsmailMks/try-react-router.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/MuhIsmailMks/try-react-router.git/index.html",
-    "main.cc15635a.css.map": "/MuhIsmailMks/try-react-router.git/static/css/main.cc15635a.css.map",
-    "main.5c640e69.js.map": "/MuhIsmailMks/try-react-router.git/static/js/main.5c640e69.js.map",
-    "787.d90a9344.chunk.js.map": "/MuhIsmailMks/try-react-router.git/static/js/787.d90a9344.chunk.js.map"
+    "main.css": "/try-react-router/static/css/main.cc15635a.css",
+    "main.js": "/try-react-router/static/js/main.05398d90.js",
+    "static/js/787.d90a9344.chunk.js": "/try-react-router/static/js/787.d90a9344.chunk.js",
+    "static/media/logo.svg": "/try-react-router/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/try-react-router/index.html",
+    "main.cc15635a.css.map": "/try-react-router/static/css/main.cc15635a.css.map",
+    "main.05398d90.js.map": "/try-react-router/static/js/main.05398d90.js.map",
+    "787.d90a9344.chunk.js.map": "/try-react-router/static/js/787.d90a9344.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc15635a.css",
-    "static/js/main.5c640e69.js"
+    "static/js/main.05398d90.js"
   ]
 }
