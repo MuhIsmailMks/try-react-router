@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter bg-[#141619];
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  img {
+    @apply block max-w-full;
+  }
+
+  button {
+    @apply bg-none tracking-[-0.03em];
+  }
+
+  input {
+    @apply tracking-[-0.03em];
+  }
+}
+
+@layer utilities {
+  /* layout */
+  .flex_center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex_items_center {
+    @apply flex items-center;
+  }
+
+  .flex_between {
+    @apply flex justify-between items-center;
+  }
+
+  .flex_justifyCenter {
+    @apply flex justify-center;
+  }
+
+  .ratioBox {
+    aspect-ratio: 1 / 1;
+  }
+
+  /* font */
+  .text_xsmall {
+    @apply lg:text-[14px];
+  }
+
+  .text_small {
+    @apply text-[14px] lg:text-[16px];
+  }
+
+  .text_medium {
+    @apply text-[15px] lg:text-[18px];
+  }
+
+  .text_large {
+    @apply text-[19px] lg:text-[22px];
+  }
+
+  .text_xlarge {
+    @apply text-[20px] lg:text-[36px];
+  }
+
+  .text_title {
+    @apply text-center leading-[1] text-[10vw] min-[400px]:text-[48px] lg:text-[58px] font-semibold tracking-wide;
+  }
+
+
+  /* styles */
+  .links li {
+    @apply uppercase font-light cursor-pointer relative max-lg:w-full;
+  }
+
+  .swiperSliderContainer .swiper-slider {
+    @apply flex justify-center items-center;
+  }
+
+  .dropMenuContainer a {
+    @apply max-lg:w-full;
+  }
+}
+
+/* swiper button */
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next,
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  top: 10% !important;
+  display: none !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 45% !important;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 45% !important;
+}
+
+@media screen and (max-width: 600px) {
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 30% !important;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 30% !important;
+  }
+}

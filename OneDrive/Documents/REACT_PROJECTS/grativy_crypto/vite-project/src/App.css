@@ -1,0 +1,94 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+.bg_gradient{
+  background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+}
+
+.box_gradient{
+  background: linear-gradient(0deg, #000000 0%,  #292929 100%);
+}
+
+.mirrorImg{
+  transform: scaleX(-1);
+}
+
+header.active::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(21px);
+  filter: blur(11px);
+  background-color: rgba(0, 0, 0, 0.226);
+  z-index: 0;
+} 
+
+.menuHeaderContainer.active::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(21px);
+  filter: blur(11px);
+  background-color: rgba(0, 0, 0, 0.226);
+  z-index: 0;
+} 
+
+
+
+
+
+.dropMenuContainer a{
+  z-index: 2;
+}
+
+@media screen and (min-width:1024px){
+  .dropMenuContainer{
+    transition: top 0s ease-in-out,opacity .2s ease-in-out;
+  }
+
+  .dropMenuContainer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(21px);
+    filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.226);
+    z-index: 0;
+    transition: opacity 0.2s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+}
+
+@media screen and (max-width:1024px){
+  .motion-element {
+    transform: translateX(0) !important;  
+  }
+}
+
+@media screen and (max-width:1024px){
+  header::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(21px);
+    filter: blur(11px);
+    background-color: rgba(0, 0, 0, 0.226);
+    z-index: 0;
+  } 
+
+  
+}

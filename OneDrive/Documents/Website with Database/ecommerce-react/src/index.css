@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primaryClr:#01aff6;
+}
+
+/* fonts */
+.remFont{
+  font-family: "REM", sans-serif;
+}
+
+.latoFont{
+  font-family: "Lato", sans-serif;
+}
+
+.istokWebFont{
+  font-family: "Istok Web", sans-serif;
+}
+
+.kronaFont{
+  font-family: "Krona One", sans-serif;
+}
+
+body{
+  font-family: "Lato", sans-serif;
+}
+
+/* utitilies */
+.flex_center {
+  @apply flex justify-center items-center;
+}
+
+.flex_Items_center {
+  @apply flex items-center;
+}
+
+.flex_start {
+  @apply flex justify-start items-center;
+}
+
+.flex_between {
+  @apply flex justify-between items-center;
+}
+ 
+.globalMaxWidth{
+  @apply max-w-[2200px];
+}
+
+.globalPaddingX{
+  @apply px-[1rem] md:px-[2rem];
+}
+
+/* fonts */
+.largeFont{
+  @apply text-[27px] md:text-[35px];
+}
+
+.mediumFont{
+  @apply text-[18px] md:text-[22px]
+}
+
+.smallFont{
+  @apply text-[14px] md:text-[15px];
+}
+
+/* navbar */
+nav li a{
+  font-family: "REM", sans-serif;
+}
+
+.innerContainer{
+  @apply duration-200 max-lg:right-[-100%];
+}
+
+.innerContainer.active{
+  @apply max-lg:right-[0%];
+}
+
+
+.logoMobile.active svg path{
+  @apply fill-[#01aff6] md:fill-black;
+}
+
+.logoMobile.active{
+  @apply text-[#fff] md:text-black;
+}
+
+
+.links a{
+  @apply text-[1rem] max-lg:text-white;
+}
+
+.links a.active{
+  @apply font-semibold;
+}
+
+.menuBtn.active span{
+  @apply bg-[#fff];
+}
+
+.menuBtn.active span:nth-child(1) {
+  @apply rotate-45 top-[43%];
+}
+
+.menuBtn.active span:nth-child(2) {
+  @apply w-0;
+}
+
+.menuBtn.active span:nth-child(3) {
+  @apply rotate-[-45deg] bottom-[43%];
+}
+
+
+.navBarIcon svg path{
+  @apply fill-white max-lg:fill-[#01AFF6]
+}
+
+/* hero */
+.hero{
+  background: linear-gradient(90.67deg, #0EB3E0 0.58%, #000000 104.52%);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+  font-size: 20px;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.heroBtn{
+  background: linear-gradient(90deg, #00C8FF 0%, #007EE6 100%);
+  font-family: "Istok Web", sans-serif;
+}
+
+/* button style */ 
+
+.custom_next_btn,
+.custom_prev_btn{
+  @apply absolute left-[20px] w-[50px] h-[50px] z-0;
+}
+
+.custom_prev_btn{
+  @apply left-[20px];
+}
+
+.swiper-button-prev, 
+.swiper-rtl .swiper-button-next {
+  left: 20px !important;  
+}
+
+.swiper-button-next, 
+.swiper-rtl .swiper-button-next {
+  right: 20px !important; 
+}
+
+.swiper-button-prev, 
+.swiper-rtl .swiper-button-next,
+.swiper-button-next, 
+.swiper-rtl .swiper-button-next{ 
+  background: red;
+  z-index: 1;
+  width: 50px !important;  
+  height: 50px !important;  
+} 
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+  display: none;
+}
